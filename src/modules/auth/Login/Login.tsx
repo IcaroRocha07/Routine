@@ -1,11 +1,16 @@
 import React from "react";
-import { Text } from "react-native";
 import * as S from "./Login.styles";
 import LOGO from "../../../../assets/LOGO.png";
 import Input from "../../../components/Input/input";
 import Button from "../../../components/Button/Button";
+import { useNavigation } from "@react-navigation/native";
+import { propsStack } from "../../../routes/Models";
+
 
 const Login: React.FC = () => {
+  const navigation = useNavigation<propsStack>();
+
+
   return (
     <S.Container>
       <S.ContainerCenter>
@@ -22,7 +27,12 @@ const Login: React.FC = () => {
           <Input label="Idade" placeholder="Digite sua idade." />
         </S.PaddingInp>
         <S.Button> 
-        <Button text="Iniciar" type="primary"/>
+        <Button 
+          text="Iniciar" 
+          type="primary"
+          textDesc=""
+          onPress={() => navigation.navigate("Selector")}
+          />
         </S.Button>
        
       </S.ContainerMid>
@@ -31,3 +41,4 @@ const Login: React.FC = () => {
 };
 
 export default Login;
+

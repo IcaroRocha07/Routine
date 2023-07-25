@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View } from "react-native";
-import { TInput } from "./input.interface";
+import { TInput } from "./Input.interface";
 import * as S from "./Input.styles";
 
 // import { Container } from './styles';

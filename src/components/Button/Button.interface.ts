@@ -2,5 +2,6 @@ import { TouchableOpacityProps } from "react-native";
 
 export interface IButton extends TouchableOpacityProps {
   text: string;
-  type: "primary" | "secondary";
+  textDesc: any;
+  type: "primary" | "secondary" | "select";
 }

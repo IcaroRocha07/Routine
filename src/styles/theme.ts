@@ -10,6 +10,9 @@ export default {
       aqua: "#00E2C0",
       blue:"#1E65AF",
       orange:"#DA701F",
-
+    },
+    fonts:{
+      patuaOne_regular:"PatuaOne_400Regular",
     }
+    
 }

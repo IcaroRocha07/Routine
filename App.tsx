@@ -1,16 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Login from './src/modules/auth/Login/Login';
+import React, { ReactElement } from "react";
+import { SafeAreaView } from "react-native";
 import { useTheme, ThemeProvider } from "styled-components";
-import theme from './src/styles/theme';
+import theme from "./src/styles/theme";
+import { StatusBar } from "expo-status-bar";
+import AppRoutes from "./src/routes/Routes";
 
-export default function App () {
+
+const ApplicationContent = () => {
   return (
     <>
-    <ThemeProvider theme={theme}>
-    <Login/>
-    </ThemeProvider>
+
+    <SafeAreaView
+      style={{
+        flex: 1,
+      }}
+    >
+      <StatusBar backgroundColor={"#DA701F"} />
+      <AppRoutes />
+    </SafeAreaView>
+  </>
+  );
+};
+
+function App(): ReactElement {
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <ApplicationContent />
+      </ThemeProvider>
     </>
-    
   );
 }
+
+export default App;

@@ -3,7 +3,8 @@ import { View } from "react-native";
 import { IButton } from "./Button.interface";
 import * as S from "../Button/Button.style";
 
-const Button: React.FC<IButton> = ({ text, type, ...props }) => {
+
+const Button: React.FC<IButton> = ({ text, textDesc, type, ...props }) => {
     return (
       <View>
         {type === "primary" ? (
@@ -19,6 +20,16 @@ const Button: React.FC<IButton> = ({ text, type, ...props }) => {
             <S.TitleSec>{text}</S.TitleSec>
             </S.BackgroundSec>
           </S.ContainerSec>
+        ) 
+        
+        : type === "select" ? (
+          <S.ContainerSelect {...props}>
+            <S.BackgroundSelect>
+            <S.TitleSelect>{text}</S.TitleSelect>
+            <S.LineW/>
+            <S.TitleDesc>{textDesc}</S.TitleDesc>
+            </S.BackgroundSelect>
+          </S.ContainerSelect>
         ) 
         
          : (

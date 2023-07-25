@@ -14,6 +14,8 @@ export const Line = styled.View`
   margin-top: 1px;
   border: #3DAA36;
 `;
+
+
 export const Label = styled.Text`
   color: ${({ theme }) => theme.colors.background};
   font-size: 18px;

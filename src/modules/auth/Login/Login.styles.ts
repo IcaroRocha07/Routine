@@ -1,7 +1,8 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  margin-top: 130px;
+  padding-top: 130px;
+  background: aqua;
 `;
 export const Title =styled.Text`
 font-size: 18px;

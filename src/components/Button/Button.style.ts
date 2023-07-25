@@ -49,3 +49,38 @@ export const TitleSecondary = styled.Text`
   color: ${({ theme }) => theme.colors.background};
   font-family: ${({ theme }) => theme.fonts.poppins_semibold};
 `;
+
+export const ContainerSelect = styled.TouchableOpacity`
+  width: 360px;
+  height: 95px;
+  background-color: ${({ theme }) => theme.colors.aqua};
+  border-radius: 20px;
+  margin-left: 16px;
+`;
+export const BackgroundSelect = styled.View`
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.blue};
+`;
+
+export const TitleSelect = styled.Text`
+  font-size: 30px;
+  color: ${({ theme }) => theme.colors.background};
+  text-align: center;
+  `;
+
+export const TitleDesc = styled.Text`
+font-size: 15px;
+color: ${({ theme }) => theme.colors.background};
+text-align: center;
+`;
+
+export const LineW = styled.View`
+  width: 85%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid white;
+`;

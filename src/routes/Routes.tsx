@@ -7,6 +7,7 @@ import {
 } from "@react-navigation/stack";
 import Login from "../modules/auth/Login/Login";
 import Selector from "../modules/Screens/selector/Selector";
+import PersonalPanel from "../modules/Screens/personalPanel/PersonalPanel";
 
 // Componente de navegação
 const AppRoutes: React.FC = () => {
@@ -22,6 +23,7 @@ const AppRoutes: React.FC = () => {
       >
         <Screen name="Login" component={Login} />
         <Screen name="Selector" component={Selector} />
+        <Screen name="PersonalPanel" component={PersonalPanel}/>
       </Navigator>
     </NavigationContainer>
   );

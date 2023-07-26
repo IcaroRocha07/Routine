@@ -1,8 +1,12 @@
 import React from "react";
 import * as S from "./Selector.style";
 import Button from "../../../components/Button/Button";
+import { useNavigation } from "@react-navigation/native";
+import { propsStack } from "../../../routes/Models";
 
 const Selector: React.FC = () => {
+  const navigation = useNavigation<propsStack>();
+
   return (
     <S.Container>
       <S.ContainerTop>
@@ -15,6 +19,7 @@ const Selector: React.FC = () => {
             type="select"
             text="Pessoal"
             textDesc="Aqui poderá criar sua rotina pessoal!"
+            onPress={() => navigation.navigate("PersonalPanel")}
           ></Button>
         </S.ContainerEspace>
         <S.ContainerEspace>

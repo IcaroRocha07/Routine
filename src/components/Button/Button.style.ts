@@ -19,12 +19,12 @@ export const BackgroundPrim = styled.View`
 
 export const TitlePrim = styled.Text`
   font-size: 18px;
-  color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.white};
 `;
 
 export const TitleSec = styled.Text`
   font-size: 18px;
-  color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.white};
 `;
 
 export const ContainerSec = styled.TouchableOpacity`
@@ -46,7 +46,7 @@ export const BackgroundSec = styled.View`
 
 export const TitleSecondary = styled.Text`
   font-size: 18px;
-  color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.white};
   font-family: ${({ theme }) => theme.fonts.poppins_semibold};
 `;
 
@@ -68,13 +68,13 @@ export const BackgroundSelect = styled.View`
 
 export const TitleSelect = styled.Text`
   font-size: 30px;
-  color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.white};
   text-align: center;
   `;
 
 export const TitleDesc = styled.Text`
 font-size: 15px;
-color: ${({ theme }) => theme.colors.background};
+color: ${({ theme }) => theme.colors.white};
 text-align: center;
 `;
 

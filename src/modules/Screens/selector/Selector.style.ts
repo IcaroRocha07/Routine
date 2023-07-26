@@ -1,7 +1,8 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-width: "100%"
+width: "100%";
+background-color:${({ theme }) => theme.colors.grayHome};
 `
 export const ContainerTop = styled.View`
 margin-top:140px;

@@ -22,14 +22,14 @@ export const ContainerMid = styled.View`
   margin-top: 80px;
 `;
 
-export const Text =styled.Text`
+export const Text = styled.Text`
 font-size: 35px;
 margin-top: 10%;
-color: ${({ theme }) => theme.colors.background};
+color: ${({ theme }) => theme.colors.white};
 text-align: center;
 `
 
-export const Nome =styled.Text`
+export const Nome = styled.Text`
 font-size: 20px;
 margin-left: 40px;
 `

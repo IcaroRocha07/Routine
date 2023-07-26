@@ -2,9 +2,6 @@ import React from "react";
 import * as S from "./PersonalPanel.style";
 import DateButton from "../../../components/DateButton/DateButton";
 
-
-
-
 const PersonalPanel: React.FC = () => {
 
     return (
@@ -12,6 +9,7 @@ const PersonalPanel: React.FC = () => {
         <S.Container>
             <S.ContainerTop>
                <DateButton  text="S"number={'02'}/> 
+               <DateButton  text="T"number={'03'}/> 
             </S.ContainerTop>
 
             <S.ContainerMid>

@@ -4,7 +4,7 @@ import { IRegister } from './Register.interface';
 
 const Register: React.FC<IRegister> = ({onPress}) => {
 
-  console.log('olá')
+  console.log('olá, jorge')
     return (
         <S.RegisterContainer onPress={onPress}>
           <S.Image source={require('.././../../assets/mais.png')}/>
